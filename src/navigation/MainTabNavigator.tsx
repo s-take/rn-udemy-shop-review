@@ -15,12 +15,15 @@ import { RouteProp } from "@react-navigation/core";
 
 const Tab = createBottomTabNavigator<RootStackParamList>();
 
-const tabIconNames: Record<keyof RootStackParamList, string> = {
+const tabIconNames: Record<
+  keyof RootStackParamList,
+  keyof typeof Feather.glyphMap
+> = {
   Main: "home",
   Home: "home",
-  Shop: "shop",
+  Shop: "user",
   User: "user",
-  CreateReview: "shop",
+  CreateReview: "user",
 };
 
 export const MainTabNavigator = () => {

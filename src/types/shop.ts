@@ -1,5 +1,5 @@
 export type Shop = {
-  // id?: string;
+  id?: string;
   name: string;
   place: string;
   score: number;

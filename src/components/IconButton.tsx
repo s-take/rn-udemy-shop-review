@@ -9,7 +9,7 @@ import { Feather } from "@expo/vector-icons";
 
 type IconButtonProps = {
   onPress: (event: GestureResponderEvent) => void;
-  name: string;
+  name: keyof typeof Feather.glyphMap;
   color?: string;
 };
 

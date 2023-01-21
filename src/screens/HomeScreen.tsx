@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { StyleSheet, FlatList, SafeAreaView } from "react-native";
 /* lib */
-import { getShops } from "../lib/shop";
+import { getShops } from "../lib/firebase";
 /* components */
 import { ShopReviewItem } from "../components/ShopReviewItem";
 /* types */
